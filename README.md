@@ -112,7 +112,7 @@ To modify the colors in the application, make changes in the ```frontend/src/the
 
 To modify the fonts in the application, first, add a new font to the ```frontend/src/pages/_document.js``` file, and then make changes in the ```frontend/src/theme/theme.js``` file.
 
-### 3. Changing the Logo
+### 3. Changing Logo
 
 To modify the logo in the application, make changes in the ```frontend/src/layout/Header.js``` and ```frontend/src/layout/Sidebar.js``` files.
 
