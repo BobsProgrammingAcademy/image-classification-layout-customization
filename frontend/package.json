@@ -1,0 +1,34 @@
+{
+  "name": "image-classification",
+  "version": "1.0.0",
+  "description": "Image Classification",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "MG",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.9.3",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.7",
+    "aos": "^2.3.4",
+    "axios": "^0.27.2",
+    "next": "^12.2.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-lazy-load-image-component": "^1.5.4"
+  },
+  "devDependencies": {
+    "regenerator-runtime": "^0.13.9"
+  }
+}
