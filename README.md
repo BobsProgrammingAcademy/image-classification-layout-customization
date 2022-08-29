@@ -11,7 +11,6 @@ This is an image classification app built using **Django 4**, **Next.js 12**, an
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the application](#run-the-application)
-- [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
 
 
