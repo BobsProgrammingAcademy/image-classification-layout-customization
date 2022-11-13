@@ -12,6 +12,7 @@ This is an image classification app built using **Django 4**, **Django REST Fram
 - [Installation](#installation)
 - [Running the application](#run-the-application)
 - [Customizing the application](#customize-the-application)
+- [Copyright and License](#copyright-and-license)
 
 
 ## Prerequisites
@@ -139,3 +140,7 @@ To modify the two buttons in the Hero section, make changes in the ```frontend/s
 ### 7. Changing the App Description
 
 To modify the app's description on the home page, make changes in the ```frontend/src/components/Description.js``` file.
+
+## Copyright and License
+
+Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
