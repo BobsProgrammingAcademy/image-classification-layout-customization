@@ -1,9 +1,7 @@
 import cv2
-import os
 import ssl
 import numpy as np
 import tensorflow as tf
-from django.conf import settings
 from django.db import models
 from PIL import Image
 
@@ -12,10 +10,10 @@ class Classifier(models.Model):
   image = models.ImageField(upload_to='images')
   result = models.CharField(max_length=250, blank=True)
   date_uploaded = models.DateTimeField(auto_now_add=True)
-  
+
   def __str__(self):
     return 'Image classfied at {}'.format(self.date_uploaded.strftime('%Y-%m-%d %H:%M'))
-    
+
   def save(self, *args, **kwargs):
     try:
       # SSL certificate necessary so we can download weights of the InceptionResNetV2 model
@@ -38,5 +36,5 @@ class Classifier(models.Model):
       print('Success')
     except Exception as e:
       print('Classification failed:', e)
-    
+
     return super().save(*args, **kwargs)
