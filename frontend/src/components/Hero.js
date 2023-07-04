@@ -9,11 +9,10 @@ import HeroButtons from '../components/HeroButtons';
 
 const Hero = () => {
   const theme = useTheme();
-  const isMd = useMediaQuery(
-    theme.breakpoints.up('md'),
-    { defaultMatches: true }
-  );
-  
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
+
   return (
     <Box
       maxWidth={{ sm: 720, md: 1236 }}
@@ -23,12 +22,7 @@ const Hero = () => {
       backgroundColor={theme.palette.background.default}
     >
       <Grid container spacing={4} marginTop='20px'>
-        <Grid 
-          item 
-          xs={12} 
-          md={6}
-          sx={{ order: { xs: 2, md: 1 } }}
-        >
+        <Grid item xs={12} md={6} sx={{ order: { xs: 2, md: 1 } }}>
           <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
             <Box marginBottom={2}>
               <Typography
@@ -55,12 +49,12 @@ const Hero = () => {
             <HeroButtons />
           </Box>
         </Grid>
-        <Grid 
-          item 
-          container 
-          alignItems='center' 
-          justifyContent='center' 
-          xs={12} 
+        <Grid
+          item
+          container
+          alignItems='center'
+          justifyContent='center'
+          xs={12}
           md={6}
           sx={{ order: { xs: 1, md: 2 } }}
         >
@@ -76,7 +70,7 @@ const Hero = () => {
               },
             }}
           >
-            <Box 
+            <Box
               component={LazyLoadImage}
               src={'/images/img1.jpg'}
               alt='Hero'

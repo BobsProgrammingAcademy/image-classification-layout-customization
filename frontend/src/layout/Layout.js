@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
-import Fab from "@mui/material/Fab";
+import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import NoSsr from '@mui/material/NoSsr';
 import Zoom from '@mui/material/Zoom';
@@ -15,28 +15,27 @@ import Sidebar from './Sidebar';
 
 const Layout = ({ children }) => {
   const theme = useTheme();
-  const isMd = useMediaQuery(
-    theme.breakpoints.up('md'),
-    { defaultMatches: true }
-  );
-  
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
+
   const [openSidebar, setOpenSidebar] = useState(false);
-  
+
   const handleSidebarOpen = () => {
     setOpenSidebar(true);
   };
-  
+
   const handleSidebarClose = () => {
     setOpenSidebar(false);
   };
-  
+
   const open = isMd ? false : openSidebar;
 
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
   });
-  
+
   const scrollTo = (id) => {
     setTimeout(() => {
       const element = document.querySelector(`#${id}`);
@@ -46,7 +45,7 @@ const Layout = ({ children }) => {
       window.scrollTo({ left: 0, top: element.offsetTop, behavior: 'smooth' });
     });
   };
-  
+
   return (
     <Box
       id='page-top'
@@ -56,10 +55,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Header onSidebarOpen={handleSidebarOpen} />
-      <Sidebar
-        onClose={handleSidebarClose}
-        open={open}
-      />
+      <Sidebar onClose={handleSidebarClose} open={open} />
       <Box
         maxWidth={{ sm: 720, md: 1236 }}
         width={1}
@@ -77,9 +73,9 @@ const Layout = ({ children }) => {
             role='presentation'
             sx={{ position: 'fixed', bottom: 24, right: 32 }}
           >
-            <Fab 
-              color='primary' 
-              size='small' 
+            <Fab
+              color='primary'
+              size='small'
               aria-label='scroll back to top'
               sx={{
                 '&:hover': {
@@ -99,7 +95,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default Layout;
