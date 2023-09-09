@@ -21,7 +21,7 @@ Install the following prerequisites:
 
 1. [Python 3.7-3.10](https://www.python.org/downloads/)
 <br>This project uses **TensorFlow v2.9.1**. For TensorFlow to work, you must have a correct Python version installed on your machine. More information [here](https://www.tensorflow.org/install/source#tested_build_configurations).
-2. [Node.js 18.0.0 or higher](https://nodejs.org/en/)
+2. [Node.js](https://nodejs.org/en/)
 3. [Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Installation
