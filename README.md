@@ -30,7 +30,7 @@ Install the following prerequisites:
 
 #### 1. Create a virtual environment
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 cd backend
@@ -42,7 +42,7 @@ python -m venv venv
 
 #### 2. Activate the virtual environment
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 On macOS:
 
@@ -58,7 +58,7 @@ venv\scripts\activate
 
 #### 3. Install required backend dependencies
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 pip install -r requirements.txt
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 #### 4. Run migrations
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 python manage.py makemigrations
@@ -80,7 +80,7 @@ python manage.py migrate
 
 #### 1. Install required frontend dependencies
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 cd frontend
@@ -96,7 +96,7 @@ To run the application, you need to have both the backend and the frontend up an
 
 #### 1. Run backend
 
-From the **backend** directory run:
+From the **backend** directory, run:
 
 ```bash
 python manage.py runserver
@@ -104,7 +104,7 @@ python manage.py runserver
 
 #### 2. Run frontend
 
-From the **frontend** directory run:
+From the **frontend** directory, run:
 
 ```bash
 npm run dev
