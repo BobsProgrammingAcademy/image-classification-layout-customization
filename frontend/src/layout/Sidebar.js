@@ -69,9 +69,9 @@ const Sidebar = ({ open, onClose }) => {
                 color: theme.palette.text.secondary,
                 fontSize: theme.typography.body2,
                 fontWeight: 'medium',
-                mr: 2,
+                marginRight: 2,
                 '& svg': {
-                  mr: 0.5,
+                  marginRight: 0.5,
                 },
               }}
             >
@@ -88,9 +88,9 @@ const Sidebar = ({ open, onClose }) => {
               color: theme.palette.text.secondary,
               fontSize: theme.typography.body2,
               fontWeight: 'medium',
-              mr: 2,
+              marginRight: 2,
               '& svg': {
-                mr: 0.5,
+                marginRight: 0.5,
               },
             }}
           >
