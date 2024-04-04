@@ -166,7 +166,7 @@ const Classifier = () => {
           </Grid>
         </Container>
       </Box>
-      <Spacer sx={{ pt: 6 }} />
+      <Spacer sx={{ paddingTop: 6 }} />
     </>
   );
 };
