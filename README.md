@@ -2,7 +2,11 @@
 
 This is an image classification app built using **Django 4**, **Django REST Framework 3**, **Next.js 12**, and **Material UI 5**. The app uses **Inception-ResNet-v2** to classify images selected by the user.
 
+### Dark mode:
+
 ![plot](https://github.com/BobsProgrammingAcademy/Image-Classification-App-Layout-Customization/blob/master/frontend/public/images/dark.png?raw=true)
+
+### Light mode:
 
 ![plot](https://github.com/BobsProgrammingAcademy/Image-Classification-App-Layout-Customization/blob/master/frontend/public/images/image_classification.png?raw=true)
 
