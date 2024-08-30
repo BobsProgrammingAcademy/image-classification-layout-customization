@@ -1,4 +1,3 @@
-import React from 'react';
 import Dropzone from 'react-dropzone';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
